@@ -13,6 +13,7 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'prettier/prettier': 'off',
-    'semi': 'off'
+    semi: 'off',
+    'no-unused-vars': 'off'
   }
 }
