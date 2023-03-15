@@ -1,6 +1,18 @@
 <template>
-  <router-view />
+  <div class="container">
+    <router-view />
+  </div>
 </template>
 
-<style lang="scss">
-</style>
+<script>
+import { onMounted } from 'vue'
+export default {
+  setup() {
+    onMounted(() => {
+      window.document.documentElement.setAttribute('data-theme', 'default')
+    })
+  }
+}
+</script>
+
+<style lang="scss"></style>

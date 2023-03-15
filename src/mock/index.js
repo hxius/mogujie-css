@@ -1,21 +1,14 @@
 import Mock from 'mockjs'
+import user from './user'
 
 Mock.setup({
   timeout: '300-600'
 })
+// 模拟后端数据
+Mock.mock('/api/users', 'get', user.getUsers)
+Mock.mock('/api/login', 'post', user.login)
 
-Mock.Mock('/api/user', 'get', getUser)
-
-const getUser = () => {
-  return Mock.Mock({
-    data: {
-      name: '@cname',
-      'phone|11': '@integer(0,9)',
-      city: '@city'
-    },
-    status: '200',
-    msg: '请求成功'
-  })
-}
+// 使用箭头函数会报异常
+// Uncaught ReferenceError: Cannot access 'getUsers' before initialization
 
 export default Mock

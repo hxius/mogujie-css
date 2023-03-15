@@ -1,0 +1,42 @@
+/***** Color *****/
+
+$color-primary: #FF5777;
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+$text-color-primary: #333333;
+$text-color-secondary: #666666;
+$text-color-tertiary: $color-white;
+$text-color-quaternary: $color-primary;
+
+$border-color-base: #E5E5E5;
+
+$border-color-primary: $border-color-base;
+$border-color-secondary: #E5E5E5;
+$border-color-tertiary: #E5E5E5;
+$border-color-quaternary: #E5E5E5;
+
+$background-color-primary: #F1F1F1;
+$background-color-secondary: $color-white;
+$background-color-tertiary: $color-primary;
+$background-color-quaternary: $color-primary;
+
+/***** Border *****/
+/**
+ * @ params !default表示默认值，如使用变量时未赋值，则使用默认值
+**/
+$border-width-base: 1px !default;
+$border-style-base: solid !default;
+$border-base: $border-width-base $border-style-base $border-color-base !default;
+
+/***** Font *****/
+
+/***** Border *****/
+
+/***** Icon *****/
+
+/***** Checkbox *****/
+/***** Radio *****/
+/***** Select *****/
+/***** Alert *****/
+/***** z-index *****/
