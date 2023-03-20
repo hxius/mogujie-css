@@ -18,5 +18,5 @@
 
 ## ITCSS()
 
-## ACSS
+## ACSS()
   > https://www.tailwindcss.cn/docs
